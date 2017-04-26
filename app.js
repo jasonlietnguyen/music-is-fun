@@ -8,6 +8,7 @@ function ItunesController() {
   }
 
   function drawSongs(songList) {
+    console.log(songList)
     var ele = document.getElementById("songs")
     var template = ''
     // This is where you task begins
@@ -17,9 +18,9 @@ function ItunesController() {
         <div class="col-lg-4 box">
           <h4>$${currentSong.price}</h4>
           <img src="${currentSong.albumArt}" alt="" width="50%">
-          <marquee onclick="document.getElementById('plays').play()"><h1>${currentSong.title}</h1></marquee>
+          <marquee onclick="document.getElementById('id${currentSong.trackId}').play()"><h1>${currentSong.title}</h1></marquee>
           <h3 class="thin">${currentSong.artist}</h3><br>
-          <audio controls id="plays">
+          <audio controls id="id${currentSong.trackId}">
             <source src="${currentSong.preview}" type="audio/ogg">
           </audio>
         </div>

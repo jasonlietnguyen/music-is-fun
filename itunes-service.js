@@ -11,6 +11,7 @@ function ItunesService(){
       return $.getJSON(apiUrl).then(function(response){
         var songList = response.results.map(function (song) {
                   return {
+                      trackId: song.trackId,
                       title: song.trackName,
                       albumArt: song.artworkUrl60,
                       artist: song.artistName,
