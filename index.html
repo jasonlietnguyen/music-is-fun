@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>Music Is Life</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="title text-center">Music Is Fun</h1>
+    <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+      <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+      <div class="form-group">
+        <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+      </div>
+    </form>
+    <div id="songs" class="row"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="itunes-service.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
