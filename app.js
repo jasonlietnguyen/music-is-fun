@@ -17,7 +17,7 @@ function ItunesController() {
       template += `
         <div class="col-lg-4 box">
           <h4>$${currentSong.price}</h4>
-          <img src="${currentSong.albumArt}" alt="" height="100px">
+          <img src="${currentSong.albumArt}" alt="" height="150px">
           <marquee onclick="document.getElementById('id${currentSong.trackId}').play()"><h1>${currentSong.title}</h1></marquee>
           <h3 class="thin">${currentSong.artist}</h3><br>
           <audio controls id="id${currentSong.trackId}">
