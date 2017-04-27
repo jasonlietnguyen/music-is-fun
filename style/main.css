@@ -21,6 +21,7 @@ body {
 h1 {
   font-weight: 100;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .box {
