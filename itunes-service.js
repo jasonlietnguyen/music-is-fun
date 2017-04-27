@@ -13,7 +13,7 @@ function ItunesService(){
                   return {
                       trackId: song.trackId,
                       title: song.trackName,
-                      albumArt: song.artworkUrl60,
+                      albumArt: song.artworkUrl100,
                       artist: song.artistName,
                       collection: song.collectionName,
                       price: song.collectionPrice,
