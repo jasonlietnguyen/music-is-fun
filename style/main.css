@@ -9,6 +9,13 @@ body {
   background-size: cover;
 }
 
+@media screen and (max-width: 768) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
 i {
   text-align: right;
   float: right;
