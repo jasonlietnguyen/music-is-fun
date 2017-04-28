@@ -43,8 +43,4 @@ function ItunesController() {
 
 
 
-
-
-
-
 var itunesCtrl = new ItunesController()

@@ -9,8 +9,21 @@ body {
   background-size: cover;
 }
 
+i {
+  text-align: right;
+  float: right;
+  color: #00acc1;
+  display: inline-block;
+  padding: 5px;
+}
+
+i:hover {
+  border: 1px solid #00acc1;
+  border-radius: 5px;
+}
+
 .title {
-  margin-top: 80px;
+  margin-top: 70px;
   font-size: 180px;
   font-weight: 100;
   font-family: 'League Script', cursive;
@@ -25,9 +38,13 @@ h1 {
 }
 
 .box {
-  margin: 50px 0;
+  margin: 30px 0;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.box:nth-child(even) {
+  background-color: rgba(0, 172, 193, 0.2);
 }
 
 .thin {
@@ -35,7 +52,10 @@ h1 {
 }
 
 .box:hover {
-  background-color: rgba(0, 172, 193, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .form-group {
