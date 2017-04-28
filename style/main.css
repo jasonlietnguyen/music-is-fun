@@ -9,13 +9,6 @@ body {
   background-size: cover;
 }
 
-@media screen and (max-width: 768) {
-  body {
-    background-attachment: fixed;
-    background-size: cover;
-  }
-}
-
 i {
   text-align: right;
   float: right;
@@ -105,4 +98,20 @@ h1 {
 
 input.middle:focus {
   outline-width: 0;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(https://static.pexels.com/photos/48182/startrails-monument-valley-night-arizona-48182.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
